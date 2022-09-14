@@ -1,12 +1,13 @@
 const prompt = require('prompt-sync')();
 
-let n;
-let nt=0;
+let numero=0;
+let numeroString=0;
+let numeroTotal=0;
 
 do{
-    let nString = prompt('Forneça um número');
-    let n = Number(nString);
-    nt+=n
-}while (n==0)
+    numeroString = prompt('Forneça um número');
+    numero = Number(numeroString);
+    numeroTotal+=numero
+}while (numero=0)
 
-console.log(`A soma dos números digitados é: ${nt}`);
+console.log(`A soma dos números digitados é: ${numeroTotal}`);
